@@ -13,7 +13,7 @@ COPY . $GOPATH/src/github.com/xinliangnote/go-gin-api
 RUN cd $GOPATH/src/github.com/xinliangnote/go-gin-api && go build .
 
 # FROM 基于 alpine:latest
-FROM alpine:latest
+FROM alpine:3.15
 
 # RUN 设置代理镜像
 RUN echo -e http://mirrors.ustc.edu.cn/alpine/v3.13/main/ > /etc/apk/repositories
